@@ -6,15 +6,15 @@ A full-stack web application to manage contacts securely with authentication, fa
 
 ## 🚀 Features
 
-- 🔐 JWT-based authentication  
-- 📇 Add, update, delete contacts  
-- ⭐ Favorite contacts  
-- 📌 Pin important contacts  
-- 📦 Archive / Unarchive contacts  
-- 🔍 Search & filter contacts  
-- 📄 Pagination support  
-- 📊 Dashboard overview  
-- 📥 Export contacts to CSV  
+- JWT-based authentication  
+- Add, update, delete contacts  
+- Favorite contacts  
+- Pin important contacts  
+- Archive / Unarchive contacts  
+- Search & filter contacts  
+- Pagination support  
+- Dashboard overview  
+- Export contacts to CSV  
 
 ---
 
@@ -44,8 +44,29 @@ A full-stack web application to manage contacts securely with authentication, fa
 cd backend
 mvn clean install
 mvn spring-boot:run
+```
 
+
+### 🔹 Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
+```
+
+## Images
+
+<img width="960" height="504" alt="1" src="https://github.com/user-attachments/assets/37499ef0-e44f-4438-b684-a1af62f76bfd" />
+<img width="960" height="504" alt="2" src="https://github.com/user-attachments/assets/59e29a71-99a7-4ae2-820a-8700cbbc08bc" />
+<img width="960" height="504" alt="3" src="https://github.com/user-attachments/assets/f45f474c-23f1-46c5-9c2c-4819dd52bce4" />
+<img width="960" height="504" alt="4" src="https://github.com/user-attachments/assets/29d77e5b-62fa-4448-863c-832b928f43ef" />
+<img width="960" height="504" alt="5" src="https://github.com/user-attachments/assets/f014971f-fb77-495a-abe4-c5e81b0f7168" />
+<img width="960" height="504" alt="6" src="https://github.com/user-attachments/assets/2094262d-9cd6-462a-9c1d-bbf5211788a1" />
+
+
+
+
+
+
 
