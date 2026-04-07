@@ -36,7 +36,73 @@ A full-stack web application to manage contacts securely with authentication, fa
 
 ---
 
+##  #System Architecture#
+##  1. Architecture Type :  3-Tier Architecture (Layered Architecture)
+```[ Frontend (React) ]
+          ↓
+[ Backend (Spring Boot REST API) ]
+          ↓
+[ Database (MySQL) ]
+```
+
+## 2. High-Level Architecture Flow
+```
+User (Browser)
+     ↓
+React Frontend (UI + API Calls)
+     ↓
+Spring Boot Backend (Controllers → Security → Business Logic)
+     ↓
+Spring Data JPA (Repositories)
+     ↓
+MySQL Database
+```
+
+## Backend Architecture
+```
+Controller Layer
+        ↓
+Service Layer (Business Logic)
+        ↓
+Repository Layer (JPA)
+        ↓
+Database (MySQL)
+```
+
+## Request Flow
+```
+1. User logs in
+2. Backend returns JWT token
+3. Frontend stores token (localStorage)
+
+4. User requests contacts
+   → sends token in header
+
+5. Backend JWT filter validates token
+6. Extract userId
+7. Controller handles request
+8. Repository fetches data from DB
+9. Response returned to frontend
+```
+
+##  Pagination Flow
+```
+Frontend:
+GET /api/contacts?page=0&size=10
+
+Backend:
+- Pageable used
+- Returns:
+   content
+   totalPages
+   totalElements
+
+Frontend:
+- Displays page-wise data
+```
+
 ## ⚙️ Setup Instructions
+
 
 ### 🔹 Backend Setup
 
